@@ -9,7 +9,7 @@ author:
   facebook:         
   youtubeUser:      
   youtubeChannel:   
-  twitter:          your-id
+  twitter:          
   github:           
   stackoverflow:    
   quora:            
@@ -35,7 +35,7 @@ disqus:
   id:               ""
 
 # URL
-url:                "https://rilab.io" # the base hostname & protocol for your site
+url:                "http://rilab.io" # the base hostname & protocol for your site
 # url:                "http://localhost:4000" # use this url when you develop
 baseurl:            "" # the subpath of your site, e.g. /blog
 
@@ -61,8 +61,6 @@ nav:
     url:            "/archive"
   - name:           "Tags"
     url:            "/tags"
-  - name:           "Github"
-    url:            "https://github.com/AWEEKJ/Kiko-plus"
 
 # Sass
 sass:
