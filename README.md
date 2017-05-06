@@ -1,130 +1,62 @@
-# Kiko Plus Theme
+# (WIP) Alpha - Jekyll Theme
 
-![image](/images/image.png)
+A Jekyll version of the "Alpha" theme by [HTML5 UP](https://html5up.net/).
 
-You can see live demo [here](https://aweekj.github.io/Kiko-plus). This theme is inspired by [Kiko](http://github.com/gfjaru/Kiko) theme.
+![Alpha Theme](images/alpha.jpg "Alpha Theme")
 
-## Features
+# How to Use
 
-- Disqus comment system
-- Google analytics
-- Pagination support
-- Custom tags
-- SEO support
+For those unfamiliar with how Jekyll works, check out [https://jekyllrb.com/](https://jekyllrb.com/) for all the details, 
+or read up on just the basics of [front matter](https://jekyllrb.com/docs/frontmatter/), [writing posts](https://jekyllrb.com/docs/posts/), 
+and [creating pages](https://jekyllrb.com/docs/pages/).
+
+- **GitLab**: Simply fork this repository and start editing the `_config.yml` file!  
+- **GitHub**: Fork this reposity and create a branch named `gh-pages`, then start editing the `_config.yml` file! The `.gitlab-ci.yml` file is only needed for GitLab Pages, so feel free to delete this if you are using GitHub instead.
+
+# Credits
+
+Original README from HTML5 UP:
+
+```
+Alpha by HTML5 UP
+html5up.net | @ajlkn
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
 
-## Installation
+A clean, super minimal responsive template geared towards startups, app devs, and other
+dedicated folks working tirelessly to launch their products. Includes a landing page,
+generic page, contact page, and a page with a whole mess of pre-styled elements (something
+new I'm trying out). Sass sources are also included.
 
-#### Method 1: new master's repository (The Best)
+Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
+you can use for pretty much whatever.
 
-1. First [fork](https://github.com/AWEEKJ/Kiko-plus/fork) it.
-2. Change your forked repository name _Kiko-plus_ to __USERNAME.github.io__ where __USERNAME__ is your github username.
-3. Access your new blog via [https://username.github.io](https://username.github.io).
-4. [See configuration](#configuration).
+(* = Not included)
 
-#### Method 2: gh-pages in existing repository
+Feedback, bug reports, and comments are not only welcome, but strongly encouraged :)
 
-1. Create a new branch called _gh-pages_ in the repository where you want to add a template [managing branches](https://help.github.com/articles/creating-and-deleting-branches-within-your-repository/).
-2. From command line run `git clone https://github.com/AWEEKJ/Kiko-plus.git` - this will clone _Kiko-plus_ template to your computer.
-3. Create new branch `git checkout -b gh-pages` where _gh-pages_ will be your branch name.
-4. Add remote, which is your repo from the first step, to your new branch `git remote add gh-pages https://github.com/<yourName>/<yourMaster>/gh-pages`. _yourName_ is your account name and _yourMaster_ is your repository.
-5. Push new branch to remote `git push gh-pages`.
-6. Update `_config.yml` file by changing `baseurl: "<branchName>"` _branchName_ is your branch name where _gh-pages_ resides. See [configuration](#configuration).
+AJ
+aj@lkn.io | @ajlkn
 
-## Configuration
+PS: Not sure how to get that contact form working? Give formspree.io a try (it's awesome).
 
-All configuration is done via `_config.yml` file which you will find in your main repo folder. Change this `<something>` to yours.
 
-### Basic
+Credits:
 
-- Config your blog name.
+	Demo Images:
+		Unsplash (unsplash.com)
 
-```yml
-name: <blog-name>
+	Icons:
+		Font Awesome (fortawesome.github.com/Font-Awesome)
+
+	Other:
+		jQuery (jquery.com)
+		html5shiv.js (@afarkas @jdalton @jon_neal @rem)
+		CSS3 Pie (css3pie.com)
+		background-size polyfill (github.com/louisremi)
+		Respond.js (j.mp/respondjs)
+		Skel (skel.io)
+
 ```
 
-- These configuration in `author:` is for links to icons in footer. If you want to add more link icons, modify `_includes/footer.html` file.
-
-```yml
-author:
-  facebook:         your-id
-  twitter:          your-id
-  github:           your-id
-  linkedin:         your-id
-  medium:           your-id
-  tumblr:           your-id
-  email:            your-id@your-email.com
-```
-
-- Change copyright year and name in footer.
-
-```yml
-copyright:
-  year:             2017
-  name:             Kiko
-```
-
-### Google analytics
-
-- Change this to your Google Analytic ID.
-
-```yml
-google-analytics:
-  id:               "your-id"
-```
-
-### Disqus
-
-- Change this to your Disqus short name.
-
-```yml
-disqus:
-  id:               "your-id"
-```
-
-### URL
-
-- Config your domain.
-
-```yml
-url: "https://<your-name>.github.io"
-```
-
-- **NOTE** When if running locally, change url to 
-
-```yml
-url: "https://localhost:4000"
-```
-
-- Change this to your branch name where _gh-pages_ resides. 
-- **NOTE** apply only if you used __Method 2__ for installation.
-
-```yml
-baseurl: "/<branch-name>"
-```
-
-## Run in Local
-
-1. Download or clone your remote repository.
-2. Go inside folder. First, run `rake geminstall`. 
-3. Second, run `jekyll serve` or `rake preview`. This will build a website which you can access [https://localhost:4000](https://localhost:4000). Make sure that `url` in `_config.yml` file is `url: "https://localhost:4000"`. You need to have [Jekyll](https://jekyllrb.com/docs/installation/) installed to do this.
-
-## Rakefile Usage
-
-```bash
-# Create new post
-$ rake post title="A Title" [date="2015-08-16"] [tags="[tag1, tag2]"] 
-
-# Create new draft post
-$ rake draft title="A Title" [date="2015-08-16"] [tags="[tag1, tag2]"]
-
-# Install Jekyll Plugins. Do before running in local.
-$ rake geminstall
-
-# Run in Local
-$ rake preview
-```
-
-## License
-
-This theme is released under MIT License.
+Repository [Jekyll logo](https://github.com/jekyll/brand) icon licensed under a [Creative Commons Attribution 4.0 International License](http://choosealicense.com/licenses/cc-by-4.0/).

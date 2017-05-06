@@ -1,20 +1,8 @@
 <head>
-  <meta name="google-site-verification" content="lnUOPt9zgphyTNXRiUxlVsnd6wxDWH1NDjk8CZu5vM4" />
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}</title>
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css" type="text/css">
-
-  <!-- Font -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
-
-
-  <link rel="alternate" type="application/rss+xml" title="RSS Feed for {{ site.name }}" href="{{ site.baseurl }}/feed.xml" />
- 
-
-  {% include google-analytics.html %}
-
-</head>
+		<title>{{ site.title }}</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="{{ site.url }}{{ site.baseurl }}/assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/ie8.css" /><![endif]-->
+	</head>

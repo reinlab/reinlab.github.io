@@ -1,12 +1,30 @@
----
-layout: default
----
-<header>
-  <div class="header-small">
-    <a href="{{site.url}}{{site.baseurl}}">{{ site.name }}</a>
-  </div>
-</header>
-<div class="page">
-  <div class="page-title">{{ page.title }}</div>
-  {{ content }}
-</div>
+<!DOCTYPE html>
+
+<!--
+	Alpha by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+
+<html>
+
+    {% include head.html %}
+
+<body>
+
+    {% include header.html %}
+
+    {% if page.featured-image %}
+    <span class="image featured">
+      <img src="{{ page.featured-image }}" alt="">
+    </span>
+    {% endif %}
+    
+    {{ content }}
+    
+    {% include footer.html %}
+
+
+</body>
+
+</html>
